@@ -1,16 +1,18 @@
 const express = require("express");
 const app = express();
+
 app.listen(3000, function()
 {
     console.log("hi");
 })
 
-app.get("/", function(req, res)
+app.get("/login", function(req, res)
 {
-    res.send("hello");
+    
 })
 
-app.get("/welcome.html", function(req, res)
+app.post("/login", function(req, res)
 {
-    res.send(5 + 12);
+    var username = request.body.username;
+	var password = request.body.password;
 })
